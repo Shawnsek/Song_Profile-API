@@ -1,0 +1,344 @@
+{
+	"info": {
+		"_postman_id": "02a68b5c-e794-4305-b05a-68414061cf63",
+		"name": "SPOTIFY MOCK PROJECT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31623170",
+		"_collection_link": "https://martian-desert-480416.postman.co/workspace/New-Team-Workspace~40fc404d-5b36-4303-912f-2bf7525c1050/collection/23162632-02a68b5c-e794-4305-b05a-68414061cf63?action=share&source=collection_link&creator=31623170"
+	},
+	"item": [
+		{
+			"name": "Get Song By ID (Returns all song info)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/getSongById/5d61728193528481fe5a3122",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"getSongById",
+						"5d61728193528481fe5a3122"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getsongtitlebyid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/getSongTitleById/5d61728193528481fe5a3122",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"getSongTitleById",
+						"5d61728193528481fe5a3122"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletesong",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/deleteSongById/5d61728193528481fe5a3122",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"deleteSongById",
+						"5d61728193528481fe5a3122"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatefavcount",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"songId\": \"5d61728193528481fe5a3124\", // Replace with the actual song ID\r\n  \"shouldDecrement\": true // Or true, depending on the operation you want to perform\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/updateSongFavouritesCount/",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"updateSongFavouritesCount",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addsong",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"songName\": \"Drizzy \",\r\n    \"songArtistFullName\": \"Artist Full Name\",\r\n    \"songAlbum\": \"Album Name\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/addSong/",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"addSong",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "incrementstreamcount (NEW FEATURE)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001//incrementStreamCount/656d29d4517bea618c2f1133",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"",
+						"incrementStreamCount",
+						"656d29d4517bea618c2f1133"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile Microservice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"userName\": \"Birds\",\r\n  \"fullName\": \"MARK\",\r\n  \"password\": \"password123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Follow Friend",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"Cats\",\r\n  \"friendUserName\": \"Dogs\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/followFriend",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"followFriend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UnFollow Friend",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"Dogs\",\r\n  \"friendUserName\": \"Cats\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/unfollowFriend",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"unfollowFriend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Like",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"Cats\",\r\n  \"songId\": \"5d620f54d78b833e34e65b49\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/likeSong",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"likeSong"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unlike",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"Dogs\",\r\n  \"songId\": \"song12345\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/unlikeSong",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"unlikeSong"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllFriendsSongs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/getAllFriendFavouriteSongTitles/Dogs",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"getAllFriendFavouriteSongTitles",
+						"Dogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddLastListenedToSong (NEW FEATURE)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"Rats\",\r\n  \"songId\": \"x\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/updateLastListenedSong",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"updateLastListenedSong"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GETMOSTRECENTTRACK (NEW FEATURE)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/getMostRecentSong/Rats",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"getMostRecentSong",
+						"Rats"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
