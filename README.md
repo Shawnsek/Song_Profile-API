@@ -34,13 +34,13 @@ To run this project locally, ensure you have the following installed and set up 
 
 ### 1. Clone this repository:
 
-'git clone https://github.com/Shawnsek/Song_Profile-API.git'
-'cd Song_Profile-API'
+`git clone https://github.com/Shawnsek/Song_Profile-API.git`
+`cd Song_Profile-API`
 ### 2. Build the project using Maven:
 
-'mvn clean install'
+`mvn clean install`
 ### 3. Start the application:
 
-'mvn spring-boot:run'
+`mvn spring-boot:run`
 ### 4. Access the application: - The application runs on http://localhost:8080 by default.
 - Use a tool like Postman to test the API endpoints.
