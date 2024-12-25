@@ -25,7 +25,8 @@ To run this project locally, ensure you have the following installed and set up 
 
 ### 5. Neo4j
 - Version: 4.0 or higher
-- Ensure Neo4j is running locally, and you have the required credentials (username and password) configured in the application properties.
+- Ensure Neo4j is running locally, and you have the required credentials configured in the application properties.
+        `fullName`,  `password`. `plName`, `songId` `userName` 
 
 ### 6. Postman or a Browser (Optional)
 - For testing the REST API endpoints.
