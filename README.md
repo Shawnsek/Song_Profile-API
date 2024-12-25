@@ -22,11 +22,14 @@ To run this project locally, ensure you have the following installed and set up 
 - Version: 5.0 or higher
 - Ensure MongoDB is running on localhost with the default port (27017).
 - Create and configure a database as required by the application.
+- Data is Provided in the File.
+          `ObjectId`,  `songName(String)`. `sontArtistFullName(String)`, `songAlbum(String)`, `songAmountFavourites`, `streamCount`, `Class (String)`
+
 
 ### 5. Neo4j
 - Version: 4.0 or higher
 - Ensure Neo4j is running locally, and you have the required credentials configured in the application properties.
-        `fullName`,  `password`. `plName`, `songId` `userName` 
+          `fullName`,  `password`. `plName`, `songId`, `userName` 
 
 ### 6. Postman or a Browser (Optional)
 - For testing the REST API endpoints.
@@ -43,5 +46,6 @@ To run this project locally, ensure you have the following installed and set up 
 ### 3. Start the application:
 
 `mvn spring-boot:run`
+- Have to run Profile Services and after Song Services 
 ### 4. Access the application: - The application runs on http://localhost:8080 by default.
 - Use a tool like Postman to test the API endpoints.
